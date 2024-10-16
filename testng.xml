@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Utilities.ExtentReportManager"></listener>
+
+    </listeners>
+
+    <test verbose="2"
+          preserve-order="true"
+          name="C:/Users/muhab.gamal/Selenium">
+        <classes>
+            <class name="TestCases.LoginTest">
+                <methods>
+                    <include name="LoginWithValidCredentials"/>
+                </methods>
+            </class>
+            <class name="TestCases.ProductsTest">
+                <methods>
+                    <include name="AddProductToCart"/>
+                </methods>
+            </class>
+            <class name="TestCases.CheckOutTest">
+                <methods>
+                    <include name="PlaceOrder"/>
+                </methods>
+            </class>
+            <class name="TestCases.PaymentTest">
+                <methods>
+                    <include name="PayOrder"/>
+                </methods>
+            </class>
+
+
+
+        </classes>
+    </test></suite>
